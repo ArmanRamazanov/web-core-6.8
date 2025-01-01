@@ -145,6 +145,7 @@ a:focus{
     gap:1rem;
 }
 
+/* Hamburger menu styles start here */
 .header__hamburger-menu{
     top:0;
     left:0;
@@ -174,7 +175,6 @@ a:focus{
 .header__hamburger-menu-close{
     position:absolute;
     top:0.25rem;
-    animation:hamburger-menu-close-button backwards 1s alternate;
 }
 
 .header__hamburger-menu-logo{
