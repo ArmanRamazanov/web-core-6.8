@@ -10,98 +10,100 @@
 </head>
 
 <body>
+    <header>
+        <button class="button header__hamburger-button button--theme-pink" aria-label="Открыть меню">
+            <img src="images/hamburger-menu.svg">
+        </button>
+    </header>
 
     <!--Hamburger-menu-->
     <div class="header__hamburger-menu">
         
-        <!--Hamburger-menu-inner-->
-        <header class="header__hamburger-menu-header">
+        <!--Simply for stylistic purposes, so that there is no a lot of space between the header of the hamburger menu and nav-->
+        <div>
+            <!--Hamburger-menu-inner-->
+            <header class="header__hamburger-menu-header">
 
-            <!--Container for the close button and logo-->
-            <div class="header__hamburger-menu-header-column-left">
-                <div>
-                    <button class="button header__button-hamburger--pink header__hamburger-menu-button header__hamburger-menu-close" aria-label="Close">
-                        <img src="images/close.svg" aria-hidden>
-                    </button>
+                <!--Container for the close button and logo-->
+                <div class="header__hamburger-menu-header-column-left">
+                    <div>
+                        <button class="button button--theme-pink header__hamburger-menu-button header__hamburger-menu-close" aria-label="Закрыть меню">
+                            <img src="images/close.svg" aria-hidden>
+                        </button>
+                    </div>
+
+                    <a class="header__hamburger-menu-logo" >
+                        <img src="images/logo.svg" alt="CPS Company Logo">
+                    </a>
                 </div>
 
-                <a class="header__hamburger-menu-logo" >
-                    <img src="images/logo.svg" alt="CPS Company Logo">
-                </a>
-            </div>
+                <!--Search button-->
+                <button class="button button--theme-pink header__hamburger-menu-header-search" aria-label="Искать">
+                    <img src="images/search.svg" aria-hidden>
+                </button>
+            </header>
 
-            <!--Search button-->
-            <button class="button header__button-hamburger--pink header__hamburger-menu-header-search">
-                <img src="images/search.svg" aria-hidden>
-            </button>
-        </header>
+            <!--navigation menu-->
+            <nav class="header__hamburger-menu-navigation">
 
-        <!--navigation menu-->
-        <nav class="header__hamburger-menu-navigation">
-
-            <ul class="header__hamburger-menu-navigation-list">
-                <li class="header__hamburger-menu-navigation-list-item">
-                    <a href="#" class="header__hamburger-menu-navigation-list-link header__hamburger-menu-navigation-list-link--active">
-                        Ремонт техники
-                    </a>
-                </li>
-
-                <li class="header__hamburger-menu-navigation-list-item">
-                    <a href="#" class="header__hamburger-menu-navigation-list-link ">
-                        Услуги и сервисы
-                    </a>
-                </li>
-
-                <li class="header__hamburger-menu-navigation-list-item">
-                    <a href="#" class="header__hamburger-menu-navigation-list-link">
-                        Корпоративным клиентам
-                    </a>
-                </li>
-
-                <li class="header__hamburger-menu-navigation-list-item">
-                    <a href="#" class="header__hamburger-menu-navigation-list-link">
-                        Продавцам техники
-                    </a>
-                </li>
-
-                <li class="header__hamburger-menu-navigation-list-item">
-                    <a href="#" class="header__hamburger-menu-navigation-list-link">
-                        Партнерам
-                    </a>
-                </li>
-
-                <li class="header__hamburger-menu-navigation-list-item">
-                    <a href="#" class="header__hamburger-menu-navigation-list-link">
-                        Производителям
-                    </a>
-                </li>
-
-                <li class="header__hamburger-menu-navigation-list-item">
-                    <a href="#" class="header__hamburger-menu-navigation-list-link">
-                        Наши сервисные центры
-                    </a>
-                </li>
-
-                <li class="header__hamburger-menu-navigation-list-item">
-                    <a href="#" class="header__hamburger-menu-navigation-list-link">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                <ul class="header__hamburger-menu-navigation-list">
+                    <li class="header__hamburger-menu-navigation-list-item">
+                        <a href="#" class="header__hamburger-menu-navigation-list-link header__hamburger-menu-navigation-list-link--active">
+                            Ремонт техники
+                        </a>
+                    </li>
+                    <li class="header__hamburger-menu-navigation-list-item">
+                        <a href="#" class="header__hamburger-menu-navigation-list-link ">
+                            Услуги и сервисы
+                        </a>
+                    </li>
+                    <li class="header__hamburger-menu-navigation-list-item">
+                        <a href="#" class="header__hamburger-menu-navigation-list-link">
+                            Корпоративным клиентам
+                        </a>
+                    </li>
+                    <li class="header__hamburger-menu-navigation-list-item">
+                        <a href="#" class="header__hamburger-menu-navigation-list-link">
+                            Продавцам техники
+                        </a>
+                    </li>
+                    <li class="header__hamburger-menu-navigation-list-item">
+                        <a href="#" class="header__hamburger-menu-navigation-list-link">
+                            Партнерам
+                        </a>
+                    </li>
+                    <li class="header__hamburger-menu-navigation-list-item">
+                        <a href="#" class="header__hamburger-menu-navigation-list-link">
+                            Производителям
+                        </a>
+                    </li>
+                    <li class="header__hamburger-menu-navigation-list-item">
+                        <a href="#" class="header__hamburger-menu-navigation-list-link">
+                            Наши сервисные центры
+                        </a>
+                    </li>
+                    <li class="header__hamburger-menu-navigation-list-item">
+                        <a href="#" class="header__hamburger-menu-navigation-list-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
 
         <!--Footer of the hamburger-menu-->
         <footer class="header__hamburger-menu-footer">
 
             <div class="header__hamburger-menu-interaction">
                 <div class="header__hamburger-menu-interaction-buttons">
-                    <button class="button header__button-hamburger--pink header__hamburger-menu-interaction-button" aria-label="Call us">
+                    <button class="button button--theme-pink header__hamburger-menu-interaction-button" aria-label="Позвонить нам">
                         <img src="images/call.svg" aria-hidden>
                     </button>
-                    <button class="button header__button-hamburger--pink header__hamburger-menu-interaction-button" aria-label="Text us">
+                    <button class="button button--theme-pink header__hamburger-menu-interaction-button" aria-label="Написать нам">
                         <img src="images/chat.svg" aria-hidden>
                     </button>
-                    <button class="button header__button-hamburger--pink header__hamburger-menu-interaction-button" aria-label="Go to Profile">
+                    <button class="button button--theme-pink header__hamburger-menu-interaction-button" aria-label="Профиль">
                         <img src="images/profile.svg" aria-hidden>
                     </button>
                 </div>
@@ -115,145 +117,18 @@
                 </p>
             </div>
 
-            <div class="header__hamburger-menu-lang-list">
-                <button class="button header__hamburger-menu-lang-button header__hamburger-menu-lang-button--active">
+            <div class="header__hamburger-menu-lang-list" tabindex="0" aria-label="Языки">
+                <button class="button header__hamburger-menu-lang-button header__hamburger-menu-lang-button--active" aria-label="Русский">
                     RU
                 </button>
-                <button class="button header__hamburger-menu-lang-button">
+                <button class="button header__hamburger-menu-lang-button" aria-label="Английский">
                     EN
                 </button>
-                <button class="button header__hamburger-menu-lang-button">
+                <button class="button header__hamburger-menu-lang-button" aria-label="Китайский">
                     CH
                 </button>
             </div>
         </footer>
-    </div>
-
-    <div>
-        <!-- Header -->
-        <header class="header">
-
-            <!-- Header Wrapper -->
-            <div class="container header__container">
-    
-                <!-- Hamburger button and logo wrapper -->
-                <div class="header__container-column-left">
-                    <div class="header__container-column-button">
-                        <button class="button header__hamburger-button header__hamburger-menu-open header__button-hamburger--pink"
-                            title="hamburger menu">
-                            <img src="images/hamburger-menu.svg" alt="hamburger menu image">
-                        </button>
-                    </div>
-                    <a class="link header__logo" title="logo">
-                        <img class="header__logo-image" src="images/logo.svg" alt="CPS Company Logo">
-                    </a>
-                </div>
-    
-                <!--The secondary list that appears on 768px breakpoint  -->
-                <ul role="list" class="list header__menu header__menu--secondary" title="interaction menu">
-                    <li class="header__menu-item">
-                        <button class="button header__menu-button header__menu-button--pink">
-                            <img src="images/call.svg" alt="call">
-                        </button>
-                    </li>
-                    <li class="header__menu-item">
-                        <button class="button header__menu-button header__menu-button--pink">
-                            <img src="images/chat.svg" alt="chat">
-                        </button>
-                    </li>
-                    <li class="header__menu-item">
-                        <button class="button header__menu-button header__menu-button--pink">
-                            <img src="images/profile.svg" alt="profile">
-                        </button>
-                    </li>
-                </ul>
-    
-                <!-- Main List -->
-                <ul role="list" class="list header__menu header__menu--primary" title="interaction menu">
-                    <li class="header__menu-item">
-                        <button class="button header__menu-button header__menu-button--pink">
-                            <img src="images/repair.svg" alt="repair">
-                        </button>
-                    </li>
-                    <li class="header__menu-item">
-                        <button class="button header__menu-button header__menu-button--pink">
-                            <img src="images/check-status.svg" alt="check status">
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </header>
-    
-        <!-- Main part -->
-        <main class="main">
-            <!-- The main wrapper -->
-            <div class="container main__container">
-    
-                <!-- Section -->
-                <section class="section main__section">
-                    <h1 class="heading main__section-heading" title="header">
-                        Услуги и сервисы
-                    </h1>
-    
-                    <!-- Our services list -->
-                    <ul role="list" class="list main__section-list" title="our services">
-                        <li class="main__section-list-item">
-                            <button class="button main__section-list-button main__section-list-button--active">
-                                Ремонтируемые устройства
-                            </button>
-                        </li>
-                        <li class="main__section-list-item">
-                            <button class="button main__section-list-button">
-                                Дополнительные услуги
-                            </button>
-                        </li>
-                        <li class="main__section-list-item">
-                            <button class="button main__section-list-button">
-                                Цены на услуги
-                            </button>
-                        </li>
-                        <li class="main__section-list-item">
-                            <button class="button main__section-list-button">
-                                Адреса сервисных центров
-                            </button>
-                        </li>
-                        <li class="main__section-list-item">
-                            <button class="button main__section-list-button">
-                                Специальные цены
-                            </button>
-                        </li>
-                    </ul>
-    
-                    <!-- The content part -->
-                    <div class="container main__section-content">
-    
-                        <!-- The wrapper of the paragraph -->
-                        <div class="main__section-content-column main__section-content-column--descriptive">
-                            <p class="main__section-content-paragraph" title="description of our company">
-                                Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
-                                производителя.
-                                <span>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-                                    что подтверждает большое количество постоянных клиентов.
-                                    Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
-                                    родным и близким.
-                                </span>
-                            </p>
-                            <button class="button main__section-content-button-read-more" title="read more button">
-                                <img src="images/read-more-icon.svg">
-                                <span class="main__section-content-button-text">Читать далее</span>
-                            </button>
-                        </div>
-    
-                        <!-- The wrapper of the image -->
-                        <div class="main__section-content-column">
-                            <img src="images/main__section-image.png" alt="Our company Image"
-                                class="main__section-content-image">
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
     </div>
 
     <!-- The javascript link -->
